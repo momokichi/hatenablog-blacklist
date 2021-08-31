@@ -39,7 +39,7 @@ export async function getManifest() {
       'https://*/',
     ],
     content_scripts: [{
-      matches: ['http://*/*', 'https://*/*'],
+      matches: ['https://hatenablog.com/'],
       js: ['./dist/contentScripts/index.global.js'],
     }],
     web_accessible_resources: [
