@@ -1,6 +1,13 @@
 # Hatenablog-BlackList
 
 はてなブログのTOPページにブラックリストに登録したブログを表示させない．
+
+## Hou to use
+
+1. clone this repository and build
+2. load extension 
+3. set url which you block from popup(Ex. `https://example.com/*`)
+4. press `set` button and reload
 ## Features
 
 - ⚡️ **Instant HMR** - use **Vite** on dev (no more refresh!)
