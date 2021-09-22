@@ -5,6 +5,9 @@
   console.info('[vitesse-webext] Hello world from content script')
 
   const data = await browser.storage.local.get('blackList')
+
+  if (data.blackList == undefined) return
+
   const blackList: string[] = data.blackList.split('\n')
 
   const htmlCollection = document.getElementsByClassName('serviceTop-entry-recommend')

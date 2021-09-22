@@ -22,7 +22,7 @@ const blackList = ref('')
 const loadBlackList = async() => {
   try {
     const storage = await browser.storage.local.get('blackList')
-    blackList.value = storage.blackList
+    blackList.value = storage.blackList ?? ''
   }
   catch (e) {
     console.error(e)
