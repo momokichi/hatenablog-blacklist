@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
 // Firefox `browser.tabs.executeScript()` requires scripts return a primitive value
-(async () => {
+(async() => {
   console.info('[vitesse-webext] Hello world from content script')
 
   const data = await browser.storage.local.get('blackList')
