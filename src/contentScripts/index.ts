@@ -10,17 +10,17 @@
 
   const blackList: string[] = data.blackList.split('\n')
 
-  const htmlCollection = document.getElementsByClassName('serviceTop-entry-recommend')
+  const htmlCollection = document.getElementsByClassName('entry-image')
   const targets = Array.from(htmlCollection)
 
   targets.forEach((target) => {
-    const a = target.firstElementChild
+    const a = target
     const href = a?.getAttribute('href')
     if (href == null) return
 
     blackList.forEach((url) => {
       if (href.match(url)) {
-        target.parentNode?.removeChild(target)
+        target.parentNode?.parentNode?.removeChild(target.parentNode)
         console.log(`delete: ${href}`)
       }
     })
