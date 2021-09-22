@@ -9,7 +9,6 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^4.29.3
   '@vitejs/plugin-vue': ^1.6.0
   '@vue/compiler-sfc': ^3.2.6
-  '@vueuse/core': ^6.0.0
   chokidar: ^3.5.2
   cross-env: ^7.0.3
   crx: ^5.0.1
@@ -39,7 +38,6 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 4.29.3_eslint@7.32.0+typescript@4.4.2
   '@vitejs/plugin-vue': 1.6.0_@vue+compiler-sfc@3.2.6
   '@vue/compiler-sfc': 3.2.6
-  '@vueuse/core': 6.0.0_vue@3.2.6
   chokidar: 3.5.2
   cross-env: 7.0.3
   crx: 5.0.1
@@ -763,37 +761,6 @@ packages:
 
   /@vue/shared/3.2.6:
     resolution: {integrity: sha512-uwX0Qs2e6kdF+WmxwuxJxOnKs/wEkMArtYpHSm7W+VY/23Tl8syMRyjnzEeXrNCAP0/8HZxEGkHJsjPEDNRuHw==}
-    dev: true
-
-  /@vueuse/core/6.0.0_vue@3.2.6:
-    resolution: {integrity: sha512-PuBfNo/Zv+NkLcZaYWBA1WjqxQhTDC0DMQpoAIJdo/GFul/1SpBbONhUho2zqtOmq8vyGuK200wNFvyA4YUAMg==}
-    peerDependencies:
-      '@vue/composition-api': ^1.1.0
-      vue: ^2.6.0 || ^3.2.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-      vue:
-        optional: true
-    dependencies:
-      '@vueuse/shared': 6.0.0_vue@3.2.6
-      vue: 3.2.6
-      vue-demi: 0.11.3_vue@3.2.6
-    dev: true
-
-  /@vueuse/shared/6.0.0_vue@3.2.6:
-    resolution: {integrity: sha512-PLjjqL8bxI5q86qk/ifXy572nfQE3rJc1RMem+dKcGayaagMnC4kXHEt64V98DVielSwr2FuYaeFodi4KJrvdg==}
-    peerDependencies:
-      '@vue/composition-api': ^1.1.0
-      vue: ^2.6.0 || ^3.2.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-      vue:
-        optional: true
-    dependencies:
-      vue: 3.2.6
-      vue-demi: 0.11.3_vue@3.2.6
     dev: true
 
   /@windicss/config/1.3.0_typescript@4.4.2:
